@@ -1,3 +1,34 @@
+/*adiciona fontes para o emoji funcionar*/
+
+.emoji {
+    font-family:
+        "Segoe UI Emoji",
+        "Apple Color Emoji",
+        "Noto Color Emoji",
+        "Press Start 2P", cursive,
+}
+
+/*melhora o scroll automático ao clicar em botões*/
+section,
+aside,
+footer{
+    max-width:1200px;
+    margin:auto;
+    scroll-margin-top: 100px;
+}
+
+/*mudando a cor do link clicavel*/
+a {
+    color: #27e6ff;
+    text-decoration: none; /* opcional: remove o sublinhado */
+}
+
+/* azul quando passa o mouse */
+a:hover {
+    color: #c0f6ff; 
+}
+
+/* CSS Reset: Definição padrão pra página */
 *{
 margin:0;
 padding:0;
@@ -5,12 +36,14 @@ box-sizing:border-box;
 scroll-behavior:smooth;
 }
 
+/* setando a fonte do body */
 body{
-font-family:Poppins,sans-serif;
+font-family:"Poppins","Segoe UI Emoji", "Apple Color Emoji", sans-serif;
 background:#10131a;
 color:white;
 }
 
+/* setando o cabeçalho */
 header{
 background:#181d28;
 padding:20px;
@@ -23,12 +56,14 @@ flex-wrap:wrap;
 z-index:100;
 }
 
+/* sentando meu nome */
 .perfil{
 display:flex;
 align-items:center;
 gap:20px;
 }
 
+/* setando minha foto */
 .perfil img{
 width:90px;
 height:90px;
@@ -37,6 +72,7 @@ object-fit:cover;
 border:3px solid #00bfff;
 }
 
+/* setando botões de navegação */
 nav{
 display:flex;
 gap:20px;
@@ -111,10 +147,23 @@ padding:25px;
 border-radius:12px;
 text-align:center;
 transition:.3s;
+
+height: 100px;           /* altura fixa */
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .card:hover{
 transform:translateY(-8px);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
 }
 
 .projetos{
@@ -135,6 +184,13 @@ line-height:2;
 
 aside a{
 color:#00bfff;
+}
+
+aside li img {
+width: 20px;
+height: 20px;
+position: relative;
+top: 2px;
 }
 
 footer{
